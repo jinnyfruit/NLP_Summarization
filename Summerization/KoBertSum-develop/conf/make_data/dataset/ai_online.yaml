@@ -1,0 +1,9 @@
+name: ai_online
+text:
+  name: article_original
+  type: str_list
+  do_cleaning: True
+summary:
+  name: extractive
+  type: idx_list
+is_informal: False

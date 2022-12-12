@@ -1,0 +1,17 @@
+mode: df_to_bert
+model_name: kykim/bert-kor-base
+n_cpus: 16
+
+dirs:
+  df: df
+  json: json
+  bert: bert
+  log_file: make_data.log
+
+defaults:
+  - dataset: sample
+
+hydra:
+  run:
+    dir: ../datasets/${dataset.name}
+  output_subdir: null # ${now:%Y-%m-%d}/${now:%H-%M-%S}
